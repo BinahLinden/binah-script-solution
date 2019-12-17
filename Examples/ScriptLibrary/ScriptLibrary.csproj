@@ -14,15 +14,18 @@
     <OutputPath Condition="'$(OutputPath)' == ''">bin\$(Configuration)\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Sansar.Script, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fcef67819c30707d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Assemblies\Sansar.Script.dll</HintPath>
+    <Reference Include="Sansar.Script">
+      <HintPath>..\..\Assemblies\Sansar.Script.dll</HintPath>
     </Reference>
-    <Reference Include="Sansar.Simulation, Version=1.1.0.0, Culture=neutral, PublicKeyToken=fcef67819c30707d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Assemblies\Sansar.Simulation.dll</HintPath>
+    <Reference Include="Sansar.Simulation">
+      <HintPath>..\..\Assemblies\Sansar.Simulation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
