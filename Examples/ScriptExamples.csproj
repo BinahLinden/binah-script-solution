@@ -29,8 +29,48 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="*.cs" />
+    <Compile Include="AdvancedCoroutineExample.cs" />
+    <Compile Include="AgentGravityExample.cs" />
+    <Compile Include="AnimationExample.cs" />
+    <Compile Include="BanHammerExample.cs" />
+    <Compile Include="BroadcastUsers.cs" />
+    <Compile Include="CastRayExample.cs" />
+    <Compile Include="CommandExample.cs" />
+    <Compile Include="CoroutineEventExample.cs" />
+    <Compile Include="CoroutineExample.cs" />
+    <Compile Include="CoroutineLockExample.cs" />
+    <Compile Include="data-store-list.cs" />
+    <Compile Include="DataStoreExample.cs" />
+    <Compile Include="EventExample.cs" />
+    <Compile Include="FollowThePath.cs" />
+    <Compile Include="GravityExample.cs" />
+    <Compile Include="HttpClientExample.cs" />
+    <Compile Include="InteractionExample.cs" />
+    <Compile Include="MediaOverrideExample.cs" />
+    <Compile Include="MemoryExample.cs" />
+    <Compile Include="MeshVisibilityExample.cs" />
+    <Compile Include="MoverExample1.cs" />
+    <Compile Include="MoverExample2.cs" />
+    <Compile Include="MoverExample3.cs" />
+    <Compile Include="ObjectScriptExample.cs" />
+    <Compile Include="PewPewExample.cs" />
+    <Compile Include="QuestDebugExample.cs" />
+    <Compile Include="RandomMovement.cs" />
+    <Compile Include="ReflectiveDetectorExample.cs" />
+    <Compile Include="ReflectiveTrackerExample.cs" />
+    <Compile Include="SceneObjectScriptExample.cs" />
+    <Compile Include="SharedStopwatchExample.cs" />
+    <Compile Include="SharedStopwatchReaderExample.cs" />
+    <Compile Include="StatsExample.cs" />
+    <Compile Include="TeleportHotkeys.cs" />
+    <Compile Include="TwitchEventExample.cs" />
+    <Compile Include="Users\binah\access-control\access-control.cs" />
+    <Compile Include="Users\binah\material-api\materials-demo.cs" />
+    <Compile Include="Users\binah\test\DataStoreTest.cs" />
+    <Compile Include="Users\evoav\SafeDataStore\Database.cs" />
+    <Compile Include="VisitorTrackerExample.cs" />
     <Compile Include="MyScripts\*.cs" />
+    <Compile Include="Users\binah\data-store\data-store-list.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
