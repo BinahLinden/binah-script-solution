@@ -487,6 +487,26 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean)">SubscribeToTwitch</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TwitchData&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a></nobr><blockquote>Subscribes to Twitch Events.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean)">SubscribeToTwitch</a>
+                  </b>(<a href="../Sansar.Simulation/TwitchEventType.html">TwitchEventType</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TwitchData&gt;</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a></nobr><blockquote>Subscribes to Twitch Events.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:Sansar.Simulation.Client.TeleportTo(Sansar.Vector,Sansar.Vector)">TeleportTo</a>
                   </b>(<a href="../Sansar/Vector.html">Sansar.Vector</a>, <a href="../Sansar/Vector.html">Sansar.Vector</a>)<blockquote>
             Teleports to the position facing the specified direction
@@ -1103,6 +1123,84 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.Client.SubscribeToCommand(System.String,Sansar.Simulation.CommandAction,System.Action{Sansar.Simulation.CommandData},System.Action{Sansar.Script.CancelData},System.Boolean):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean)">SubscribeToTwitch Method</h3>
+        <blockquote id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean):member">
+          <div class="msummary">Subscribes to Twitch Events.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a> <b>SubscribeToTwitch</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TwitchData&gt;</a> callback, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> persistent)</div>
+          <h4 class="Subsection">See Also</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean):See Also">
+            <div>
+              <a href="../Sansar.Simulation/TwitchData.html">TwitchData</a>
+            </div>
+            <div>
+              <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback which is executed when the event completes.</dd>
+              <dt>
+                <i>persistent</i>
+              </dt>
+              <dd>Optional, set to false to unsubscribe after one event.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean):Returns">An <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a> that can be used to cancel the subscription.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(System.Action{Sansar.Simulation.TwitchData},System.Boolean):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean)">SubscribeToTwitch Method</h3>
+        <blockquote id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean):member">
+          <div class="msummary">Subscribes to Twitch Events.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a> <b>SubscribeToTwitch</b> (<a href="../Sansar.Simulation/TwitchEventType.html">TwitchEventType</a> EventType, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;TwitchData&gt;</a> callback, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> persistent)</div>
+          <h4 class="Subsection">See Also</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean):See Also">
+            <div>
+              <a href="../Sansar.Simulation/TwitchData.html">TwitchData</a>
+            </div>
+            <div>
+              <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a>
+            </div>
+          </blockquote>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>EventType</i>
+              </dt>
+              <dd> The event which occurred</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback which is executed when the event completes.</dd>
+              <dt>
+                <i>persistent</i>
+              </dt>
+              <dd>Optional, set to false to unsubscribe after one event.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean):Returns">An <a href="../Sansar.Script/IEventSubscription.html">Sansar.Script.IEventSubscription</a> that can be used to cancel the subscription.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Client.SubscribeToTwitch(Sansar.Simulation.TwitchEventType,System.Action{Sansar.Simulation.TwitchData},System.Boolean):Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>

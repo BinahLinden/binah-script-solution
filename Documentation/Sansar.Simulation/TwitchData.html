@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Sansar.Script.MemoryData</title>
+    <title>Sansar.Simulation.TwitchData</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
         a { text-decoration: none }
@@ -193,41 +193,42 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">Sansar.Script</a> : <a href="index.html">Sansar.Script Namespace</a></div>
+      <a href="../index.html">Sansar.Simulation</a> : <a href="index.html">Sansar.Simulation Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:Sansar.Script.MemoryData">Overview</a>
+        <a href="#T:Sansar.Simulation.TwitchData">Overview</a>
       </p>
       <p>
-        <a href="#T:Sansar.Script.MemoryData:Signature">Signature</a>
+        <a href="#T:Sansar.Simulation.TwitchData:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:Sansar.Script.MemoryData:Docs">Remarks</a>
+        <a href="#T:Sansar.Simulation.TwitchData:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:Sansar.Script.MemoryData:Members">Member Details</a>
+        <a href="#T:Sansar.Simulation.TwitchData:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:Sansar.Script.MemoryData">MemoryData  Class</h1>
-    <p class="Summary" id="T:Sansar.Script.MemoryData:Summary">Notifies scripts about memory events.</p>
+    <h1 class="PageTitle" id="T:Sansar.Simulation.TwitchData">TwitchData  Class</h1>
+    <p class="Summary" id="T:Sansar.Simulation.TwitchData:Summary">Twitch events are generated in response to twitch stream interaction.</p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:Sansar.Script.MemoryData:Signature">public class  <b>MemoryData</b> : <a href="../Sansar.Script/EventData.html">EventData</a></div>
+      <div class="Signature" id="T:Sansar.Simulation.TwitchData:Signature">[Sansar.Script.Interface]<br />public class  <b>TwitchData</b> : <a href="../Sansar.Script/EventData.html">Sansar.Script.EventData</a></div>
     </div>
-    <div class="Remarks" id="T:Sansar.Script.MemoryData:Docs">
+    <div class="Remarks" id="T:Sansar.Simulation.TwitchData:Docs">
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:Sansar.Script.MemoryData:Docs:Remarks">See <a href="../Sansar.Script/Memory.html">Sansar.Script.Memory</a>.</div>
+      <div class="SectionBox" id="T:Sansar.Simulation.TwitchData:Docs:Remarks">
+      </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:Sansar.Script.MemoryData:Docs:Version Information">
-        <b>Namespace: </b>Sansar.Script<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <div class="SectionBox" id="T:Sansar.Simulation.TwitchData:Docs:Version Information">
+        <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
       <h2 class="Section" id="Members">Members</h2>
       <div class="SectionBox" id="_Members">
         <p>
 								See Also: Inherited members from
-								<a href="../Sansar.Script/EventData.html">EventData</a>.
+								<a href="../Sansar.Script/EventData.html">Sansar.Script.EventData</a>.
 							</p>
         <h2 class="Section">Public Properties</h2>
         <div class="SectionBox" id="Public Properties">
@@ -237,25 +238,37 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Sansar.Script.MemoryData.TrackingId">TrackingId</a>
+                    <a href="#P:Sansar.Simulation.TwitchData.EventType">EventType</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>
-                  </i>. Internal Id of the memory tracker.D:\work\647144a9cd6c61be\Sansar\Code\Common\Libraries\LLScript/Apis/CsScriptMemory.h(84)Used for routing the event.</td>
+                    <a href="../Sansar.Simulation/TwitchEventType.html">TwitchEventType</a>
+                  </i>.  The event which occurred</td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Sansar.Script.MemoryData.UseLevel">UseLevel</a>
+                    <a href="#P:Sansar.Simulation.TwitchData.Intensity">Intensity</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../Sansar.Script/MemoryUseLevel.html">MemoryUseLevel</a>
-                  </i>. The level subscribed to.D:\work\647144a9cd6c61be\Sansar\Code\Common\Libraries\LLScript/Apis/CsScriptMemory.h(84)</td>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>
+                  </i>.  The intensity of the event. Range is (0 ..1]</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.TwitchData.SessionId">SessionId</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../Sansar.Script/SessionId.html">Sansar.Script.SessionId</a>
+                  </i>.  The client which generated the event.</td>
               </tr>
             </table>
           </div>
@@ -270,7 +283,7 @@
                 </td>
                 <td colspan="2">
                   <b>
-                    <a href="#M:Sansar.Script.MemoryData.ToString()">ToString</a>
+                    <a href="#M:Sansar.Simulation.TwitchData.ToString()">ToString</a>
                   </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote> A string representation of this object. </blockquote></td>
               </tr>
               <tr valign="top">
@@ -282,60 +295,76 @@
                     <a href="../Sansar.Script/EventData.html#M:Sansar.Script.EventData.ToString()">ToString</a>
                   </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
             Generates a string representation of the EventData.
-             (<i>Inherited from <a href="../Sansar.Script/EventData.html">EventData</a>.</i>)</blockquote></td>
+             (<i>Inherited from <a href="../Sansar.Script/EventData.html">Sansar.Script.EventData</a>.</i>)</blockquote></td>
               </tr>
             </table>
           </div>
         </div>
       </div>
     </div>
-    <div class="Members" id="T:Sansar.Script.MemoryData:Members">
+    <div class="Members" id="T:Sansar.Simulation.TwitchData:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="M:Sansar.Script.MemoryData.ToString()">ToString Method</h3>
-        <blockquote id="M:Sansar.Script.MemoryData.ToString():member">
+        <h3 id="P:Sansar.Simulation.TwitchData.EventType">EventType Property</h3>
+        <blockquote id="P:Sansar.Simulation.TwitchData.EventType:member">
+          <div class="msummary"> The event which occurred</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/TwitchEventType.html">TwitchEventType</a> <b>EventType</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.TwitchData.EventType:Value">
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.TwitchData.EventType:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.TwitchData.EventType:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.TwitchData.Intensity">Intensity Property</h3>
+        <blockquote id="P:Sansar.Simulation.TwitchData.Intensity:member">
+          <div class="msummary"> The intensity of the event. Range is (0 ..1]</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> <b>Intensity</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.TwitchData.Intensity:Value">
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.TwitchData.Intensity:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.TwitchData.Intensity:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.TwitchData.SessionId">SessionId Property</h3>
+        <blockquote id="P:Sansar.Simulation.TwitchData.SessionId:member">
+          <div class="msummary"> The client which generated the event.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Script/SessionId.html">Sansar.Script.SessionId</a> <b>SessionId</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.TwitchData.SessionId:Value">
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.TwitchData.SessionId:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.TwitchData.SessionId:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.TwitchData.ToString()">ToString Method</h3>
+        <blockquote id="M:Sansar.Simulation.TwitchData.ToString():member">
           <div class="msummary"> A string representation of this object. </div>
           <h2>Syntax</h2>
-          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+          <div class="Signature">[Sansar.Script.Interface]<br />public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
           <h4 class="Subsection">Returns</h4>
-          <blockquote class="SubsectionBox" id="M:Sansar.Script.MemoryData.ToString():Returns">A string representation of this object.</blockquote>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.TwitchData.ToString():Returns">A string representation of this object.</blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="M:Sansar.Script.MemoryData.ToString():Remarks">The format of this string may change between releases.</div>
+          <div class="SectionBox" id="M:Sansar.Simulation.TwitchData.ToString():Remarks">The format of this string may change between releases.</div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="M:Sansar.Script.MemoryData.ToString():Version Information">
-            <b>Namespace: </b>Sansar.Script<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:Sansar.Script.MemoryData.TrackingId">TrackingId Property</h3>
-        <blockquote id="P:Sansar.Script.MemoryData.TrackingId:member">
-          <div class="msummary">Internal Id of the memory tracker.D:\work\647144a9cd6c61be\Sansar\Code\Common\Libraries\LLScript/Apis/CsScriptMemory.h(84)Used for routing the event.</div>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> <b>TrackingId</b>  { get; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Sansar.Script.MemoryData.TrackingId:Value">
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Sansar.Script.MemoryData.TrackingId:Remarks">
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Sansar.Script.MemoryData.TrackingId:Version Information">
-            <b>Namespace: </b>Sansar.Script<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
-          <hr size="1" />
-        </blockquote>
-        <h3 id="P:Sansar.Script.MemoryData.UseLevel">UseLevel Property</h3>
-        <blockquote id="P:Sansar.Script.MemoryData.UseLevel:member">
-          <div class="msummary">The level subscribed to.D:\work\647144a9cd6c61be\Sansar\Code\Common\Libraries\LLScript/Apis/CsScriptMemory.h(84)</div>
-          <h2>Syntax</h2>
-          <div class="Signature">public <a href="../Sansar.Script/MemoryUseLevel.html">MemoryUseLevel</a> <b>UseLevel</b>  { get; }</div>
-          <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Sansar.Script.MemoryData.UseLevel:Value">
-          </blockquote>
-          <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Sansar.Script.MemoryData.UseLevel:Remarks">
-          </div>
-          <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Sansar.Script.MemoryData.UseLevel:Version Information">
-            <b>Namespace: </b>Sansar.Script<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <div class="SectionBox" id="M:Sansar.Simulation.TwitchData.ToString():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
       </div>
